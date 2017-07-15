@@ -12,3 +12,6 @@
 */
 
 
+Route::get('/generateParams', function (){
+    \Illuminate\Support\Facades\Artisan::call('test:specifications');
+});

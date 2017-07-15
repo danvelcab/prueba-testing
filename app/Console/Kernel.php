@@ -2,6 +2,9 @@
 
 namespace App\Console;
 
+use App\Console\Commands\TestExtractParameters;
+use App\Console\Commands\TestExtractSpecifations;
+use App\Console\Commands\TestGeneration;
 use Illuminate\Console\Scheduling\Schedule;
 use Illuminate\Foundation\Console\Kernel as ConsoleKernel;
 
@@ -13,8 +16,9 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
-//        TestGeneration::class,
-//        TestExtractParameters::class
+        TestGeneration::class,
+        TestExtractParameters::class,
+        TestExtractSpecifations::class
     ];
 
     /**
